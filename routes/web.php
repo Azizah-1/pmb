@@ -4,8 +4,28 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('beranda');
 });
+
+Route::get('/beranda', function () {
+    return view('beranda');
+})->name('beranda');
+
+Route::get('/jurusan', function () {
+    return view('jurusan');
+})->name('jurusan');
+
+Route::get('/kebijakan-beasiswa', function () {
+    return view('kebijakan-beasiswa');
+})->name('kebijakan-beasiswa');
+
+Route::get('/kontak', function () {
+    return view('kontak');
+})->name('kontak');
+
+Route::get('/daftar', function () {
+    return view('daftar');
+})->name('daftar');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
