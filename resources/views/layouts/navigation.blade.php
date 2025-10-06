@@ -4,19 +4,20 @@
         <div class="flex justify-between h-16">
             <!-- Left box: Logo and company name -->
             <div class="flex items-center space-x-4">
-                <a href="{{ route('beranda') }}" class="flex items-center space-x-2">
-                    <x-application-logo class="block h-9 w-auto fill-current text-gray-800" />
-                    <span class="font-semibold text-xl text-gray-800">Company</span>
+               <a href="{{ route('beranda') }}" class="flex items-center space-x-2" style="gap : 15px;">
+                    {{-- <x-application-logo class="block h-9 w-auto fill-current text-gray-800" /> --}}
+                    <img src="{{ asset('itpb.png') }}" alt="ITPB Logo" class="h-11 w-11" style="height: 55px; width: 60px;">
+                    <span class="font-semibold text-xl text-gray-800">INSTITUT TEKNOLOGI PETROLEUM BALONGAN</span>
                 </a>
             </div>
 
             <!-- Middle box: Navigation buttons -->
             <div class="hidden sm:flex sm:space-x-6 sm:items-center">
-                <a href="{{ route('beranda') }}" class="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Beranda</a>
+                <a href="{{ route('beranda') }}" class="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-base font-medium">Beranda</a>
 
                 <x-dropdown align="left" width="48" contentClasses="py-1 bg-white">
                     <x-slot name="trigger">
-                        <button class="inline-flex items-center text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium focus:outline-none">
+                        <button class="inline-flex items-center text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-base font-medium focus:outline-none">
                             Jurusan
                             <svg class="ml-1 h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
@@ -34,14 +35,14 @@
                     </x-slot>
                 </x-dropdown>
 
-                <a href="{{ route('kebijakan-beasiswa') }}" class="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Kebijakan Beasiswa</a>
-                <a href="{{ route('kontak') }}" class="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Kontak</a>
+                <a href="{{ route('kebijakan-beasiswa') }}" class="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-base font-medium">Kebijakan Beasiswa</a>
+                <a href="{{ route('kontak') }}" class="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-base font-medium">Kontak</a>
             </div>
 
             <!-- Right box: Daftar button with login check -->
             <div class="hidden sm:flex sm:items-center">
                 @if(Auth::check())
-                    <a href="{{ route('daftar') }}" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                    <a href="{{ route('daftar') }}" class="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
                         Daftar
                     </a>
                 @else
