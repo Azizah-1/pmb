@@ -13,7 +13,27 @@
             <!-- Middle box: Navigation buttons -->
             <div class="hidden sm:flex sm:space-x-6 sm:items-center">
                 <a href="{{ route('beranda') }}" class="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Beranda</a>
-                <a href="{{ route('jurusan') }}" class="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Jurusan</a>
+
+                <x-dropdown align="left" width="48" contentClasses="py-1 bg-white">
+                    <x-slot name="trigger">
+                        <button class="inline-flex items-center text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium focus:outline-none">
+                            Jurusan
+                            <svg class="ml-1 h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                    </x-slot>
+
+                    <x-slot name="content">
+                        <x-dropdown-link href="{{ route('jurusan.rkk-s1') }}">RKK S1</x-dropdown-link>
+                        <x-dropdown-link href="{{ route('jurusan.teknik-lingkungan-s1') }}">Teknik Lingkungan S1</x-dropdown-link>
+                        <x-dropdown-link href="{{ route('jurusan.teknik-perminyakan-s1') }}">Teknik Perminyakan S1</x-dropdown-link>
+                        <x-dropdown-link href="{{ route('jurusan.fire-safety-d3') }}">Fire Safety D3</x-dropdown-link>
+                        <x-dropdown-link href="{{ route('jurusan.tekim-d3') }}">Tekim D3</x-dropdown-link>
+                        <x-dropdown-link href="{{ route('jurusan.pe-d3') }}">PE D3</x-dropdown-link>
+                    </x-slot>
+                </x-dropdown>
+
                 <a href="{{ route('kebijakan-beasiswa') }}" class="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Kebijakan Beasiswa</a>
                 <a href="{{ route('kontak') }}" class="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Kontak</a>
             </div>

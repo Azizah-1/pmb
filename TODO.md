@@ -1,23 +1,11 @@
-# Task: Create Navigation Bar with Logo, Navigation Buttons, and Daftar Button with Login Check
+# TODO: Add Dropdown Menu for Materi on Jurusan Page
 
-## Steps:
-1. Add routes in routes/web.php for:
-   - /beranda
-   - /jurusan
-   - /kebijakan-beasiswa
-   - /kontak
-   - /daftar
-
-2. Create simple blade views for these pages:
-   - resources/views/beranda.blade.php
-   - resources/views/jurusan.blade.php
-   - resources/views/kebijakan-beasiswa.blade.php
-   - resources/views/kontak.blade.php
-   - resources/views/daftar.blade.php
-
-3. Update resources/views/layouts/navigation.blade.php:
-   - Left box: logo and company name linking to /beranda
-   - Middle box: buttons for Beranda, Jurusan, Kebijakan beasiswa, Kontak linking to their routes
-   - Right box: Daftar button that checks if user is logged in; if not, redirect to login page
-
-4. Test navigation bar layout and Daftar button login detection.
+- [x] Add 6 new routes in routes/web.php for each materi (rkk-s1, teknik-lingkungan-s1, teknik-perminyakan-s1, fire-safety-d3, tekim-d3, pe-d3)
+- [x] Create subdirectory resources/views/jurusan/
+- [x] Create view file resources/views/jurusan/rkk-s1.blade.php
+- [x] Create view file resources/views/jurusan/teknik-lingkungan-s1.blade.php
+- [x] Create view file resources/views/jurusan/teknik-perminyakan-s1.blade.php
+- [x] Create view file resources/views/jurusan/fire-safety-d3.blade.php
+- [x] Create view file resources/views/jurusan/tekim-d3.blade.php
+- [x] Create view file resources/views/jurusan/pe-d3.blade.php
+- [x] Edit resources/views/jurusan.blade.php to add dropdown menu with links to each materi
