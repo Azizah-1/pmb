@@ -1,105 +1,117 @@
 <x-app-layout>
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
         <!-- Hero Section -->
-        <div class="relative bg-gray-100 rounded-lg overflow-hidden shadow-lg mt-6">
-            <img src="https://via.placeholder.com/1200x400" alt="Hero Image" class="w-full h-64 object-cover">
-            <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-center p-6">
-                <h1 class="text-white text-4xl font-bold mb-4">Anticipate and Respond to the Next Big Threat Before It Happens</h1>
-                <p class="text-white text-lg mb-6">See it. Know it. Fix it.</p>
-                <a href="#" class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 px-4 rounded">Learn More</a>
+        <section class="relative bg-white shadow-md rounded-lg overflow-hidden mt-8 animate-up">
+            <img src="https://images.unsplash.com/photo-1531058020387-3be344556be6?auto=format&fit=crop&w=1200&q=80" alt="Hero Image" class="w-full h-80 object-cover">
+            <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center items-center text-center p-10">
+                <h1 class="text-white text-5xl font-extrabold mb-4 leading-tight max-w-4xl">Teknik Kimia D3</h1>
+                <p class="text-white text-xl mb-8 max-w-3xl">Program vokasi yang fokus pada aplikasi proses kimia, pengolahan, dan industri manufaktur.</p>
+                <a href="#" class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-8 rounded-lg shadow-lg transition duration-300">Pelajari Lebih Lanjut</a>
             </div>
-        </div>
+        </section>
 
+        <!-- Program Info -->
+        <section class="mt-6 max-w-4xl mx-auto px-4 animate-up">
+            <div class="bg-white border rounded-lg p-6 shadow-sm flex flex-col md:flex-row items-start gap-6">
+                <div>
+                    <p class="text-sm text-gray-500">Gelar yang diberikan</p>
+                    <p class="text-xl font-semibold">Ahli Madya (A.Md.) - Teknik Kimia</p>
+                </div>
+                <div>
+                    <p class="text-sm text-gray-500">Lama studi (typical)</p>
+                    <p class="text-xl font-semibold">3 tahun (D3)</p>
+                </div>
+            </div>
+        </section>
         <!-- Features Section -->
-        <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="bg-white p-6 rounded-lg shadow text-center">
-                <div class="mb-4">
-                    <img src="https://via.placeholder.com/64" alt="Icon 1" class="mx-auto">
-                </div>
-                <h3 class="text-xl font-semibold mb-2">Anticipate Relevant Threats</h3>
-                <p class="text-gray-600">As a pioneer, we offer the strongest analysis to protect your organization from emerging threats.</p>
+        <section class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div class="bg-gray-50 p-8 rounded-lg shadow hover:shadow-lg transition-shadow duration-300 text-center animate-up tilt-on-hover">
+                <img src="https://images.unsplash.com/photo-1531058020387-3be344556be6?auto=format&fit=crop&w=72&q=80" alt="Reaksi" class="mx-auto mb-6 rounded-full">
+                <h3 class="text-2xl font-semibold mb-3">Kinetika & Reaksi</h3>
+                <p class="text-gray-700 leading-relaxed">Pemahaman laju reaksi dan desain reaktor untuk proses industri.</p>
             </div>
-            <div class="bg-white p-6 rounded-lg shadow text-center">
-                <div class="mb-4">
-                    <img src="https://via.placeholder.com/64" alt="Icon 2" class="mx-auto">
-                </div>
-                <h3 class="text-xl font-semibold mb-2">Expert Intelligence as a Service</h3>
-                <p class="text-gray-600">Our team provides actionable intelligence to help you make informed decisions.</p>
+            <div class="bg-gray-50 p-8 rounded-lg shadow hover:shadow-lg transition-shadow duration-300 text-center animate-up tilt-on-hover">
+                <img src="https://images.unsplash.com/photo-1542367597-6a1f1b4d5f7e?auto=format&fit=crop&w=72&q=80" alt="Operasi Unit" class="mx-auto mb-6 rounded-full">
+                <h3 class="text-2xl font-semibold mb-3">Operasi Unit</h3>
+                <p class="text-gray-700 leading-relaxed">Distilasi, penukar panas, dan operasi unit penting lainnya.</p>
             </div>
-            <div class="bg-white p-6 rounded-lg shadow text-center">
-                <div class="mb-4">
-                    <img src="https://via.placeholder.com/64" alt="Icon 3" class="mx-auto">
-                </div>
-                <h3 class="text-xl font-semibold mb-2">Eliminate Remediation Ambiguity</h3>
-                <p class="text-gray-600">We clarify remediation steps to ensure effective and timely responses.</p>
+            <div class="bg-gray-50 p-8 rounded-lg shadow hover:shadow-lg transition-shadow duration-300 text-center animate-up tilt-on-hover">
+                <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=72&q=80" alt="Kontrol Proses" class="mx-auto mb-6 rounded-full">
+                <h3 class="text-2xl font-semibold mb-3">Kontrol Proses</h3>
+                <p class="text-gray-700 leading-relaxed">Sistem kontrol untuk operasi proses yang stabil dan aman.</p>
             </div>
-        </div>
+        </section>
 
         <!-- Call to Action Banner -->
-        <div class="bg-indigo-700 text-white text-center py-12 rounded-lg mt-12">
-            <h2 class="text-2xl font-bold mb-4">Give your vulnerability management program a big data boost.</h2>
-            <a href="#" class="bg-white text-indigo-700 font-semibold py-2 px-6 rounded hover:bg-gray-100">Learn More</a>
-        </div>
+        <section class="bg-indigo-700 text-white text-center py-20 rounded-lg mt-20 shadow-lg">
+            <h2 class="text-4xl font-bold mb-6 max-w-3xl mx-auto">Bergabunglah dengan Program Studi Teknik Kimia D3.</h2>
+            <a href="#" class="bg-white text-indigo-700 font-semibold py-4 px-12 rounded-lg shadow-md hover:bg-gray-100 transition duration-300">Daftar Sekarang</a>
+        </section>
 
         <!-- Testimonial Section -->
-        <div class="mt-12">
-            <blockquote class="border-l-4 border-indigo-600 pl-6 italic text-gray-700">
-                "Unified VRM is the only software that allows me and my team to get actionable data and innovate in a collaborative and transparent fashion. It's an amazing solution."
-                <footer class="mt-4 font-semibold">- John Doe, CEO of Example Corp</footer>
+        <section class="mt-20 max-w-4xl mx-auto px-4">
+            <blockquote class="border-l-8 border-indigo-600 pl-8 italic text-gray-800 text-lg leading-relaxed">
+                "Program vokasi yang kuat di praktik laboratorium dan operasi proses industri." 
+                <footer class="mt-6 font-semibold text-right">- Alumni Teknik Kimia D3</footer>
             </blockquote>
-        </div>
+        </section>
 
         <!-- Clients Section -->
-        <div class="mt-12 grid grid-cols-3 gap-8 items-center">
-            <img src="https://via.placeholder.com/150x50?text=HESS" alt="HESS" class="mx-auto">
-            <img src="https://via.placeholder.com/150x50?text=Duff+%26+Phelps" alt="Duff & Phelps" class="mx-auto">
-            <img src="https://via.placeholder.com/150x50?text=Bank" alt="Bank" class="mx-auto">
-        </div>
+        <section class="mt-20 grid grid-cols-3 gap-16 items-center max-w-5xl mx-auto px-4">
+            <img src="https://via.placeholder.com/180x60?text=Perusahaan+A" alt="Perusahaan A" class="mx-auto">
+            <img src="https://via.placeholder.com/180x60?text=Perusahaan+B" alt="Perusahaan B" class="mx-auto">
+            <img src="https://via.placeholder.com/180x60?text=Perusahaan+C" alt="Perusahaan C" class="mx-auto">
+        </section>
 
         <!-- News and Whitepapers -->
-        <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <section class="mt-20 grid grid-cols-1 md:grid-cols-2 gap-20 max-w-6xl mx-auto px-4">
             <div>
-                <h3 class="text-xl font-semibold mb-4">Whitepapers</h3>
-                <ul class="list-disc list-inside text-gray-700">
-                    <li><a href="#" class="text-indigo-600 hover:underline">Best Practices Guide to Vulnerability Management</a></li>
-                    <li><a href="#" class="text-indigo-600 hover:underline">Understanding Threat Intelligence</a></li>
+                <h3 class="text-2xl font-semibold mb-6">Materi Kuliah</h3>
+                <ul class="list-disc list-inside text-gray-700 space-y-4">
+                    <li><a href="#" class="text-indigo-600 hover:underline">Kinetika & Rekayasa Reaksi</a></li>
+                    <li><a href="#" class="text-indigo-600 hover:underline">Operasi Unit (Distilasi, Penukar Panas)</a></li>
+                    <li><a href="#" class="text-indigo-600 hover:underline">Pengolahan Bahan & Material</a></li>
+                    <li><a href="#" class="text-indigo-600 hover:underline">Kontrol Proses</a></li>
+                    <li><a href="#" class="text-indigo-600 hover:underline">Keselamatan Proses & HSE</a></li>
+                    <li><a href="#" class="text-indigo-600 hover:underline">Laboratorium Analitik</a></li>
                 </ul>
             </div>
             <div>
-                <h3 class="text-xl font-semibold mb-4">Latest News</h3>
-                <ul class="list-disc list-inside text-gray-700">
-                    <li><a href="#" class="text-indigo-600 hover:underline">Monitoring Log Anomalies</a></li>
-                    <li><a href="#" class="text-indigo-600 hover:underline">Preparing Your Team for Cybersecurity</a></li>
+                <h3 class="text-2xl font-semibold mb-6">Berita Terkini</h3>
+                <ul class="list-disc list-inside text-gray-700 space-y-4">
+                    <li><a href="#" class="text-indigo-600 hover:underline">Inovasi dalam Pengelolaan Lingkungan</a></li>
+                    <li><a href="#" class="text-indigo-600 hover:underline">Seminar Lingkungan 2023</a></li>
                 </ul>
             </div>
-        </div>
+        </section>
 
         <!-- Team Section -->
-        <div class="mt-12 text-center">
-            <h3 class="text-2xl font-bold mb-6">Meet the Team</h3>
-            <div class="flex flex-wrap justify-center gap-8">
-                <div class="w-32">
-                    <img src="https://via.placeholder.com/150" alt="Team Member" class="rounded-full mx-auto mb-2">
-                    <p class="font-semibold">Jane Smith</p>
-                    <p class="text-gray-600 text-sm">Chief Analyst</p>
+        <section class="mt-20 text-center max-w-5xl mx-auto px-4">
+            <h3 class="text-3xl font-bold mb-12">Dosen dan Staf</h3>
+            <div class="flex flex-wrap justify-center gap-16">
+                <div class="w-40">
+                    <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=160&q=80" alt="Dosen 1" class="rounded-full mx-auto mb-6 shadow-lg">
+                    <p class="font-semibold text-xl">Dr. Dosen 1</p>
+                    <p class="text-gray-600 text-base">Kepala Program Studi</p>
                 </div>
-                <div class="w-32">
-                    <img src="https://via.placeholder.com/150" alt="Team Member" class="rounded-full mx-auto mb-2">
-                    <p class="font-semibold">Michael Brown</p>
-                    <p class="text-gray-600 text-sm">Security Specialist</p>
+                <div class="w-40">
+                    <img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?auto=format&fit=crop&w=160&q=80" alt="Dosen 2" class="rounded-full mx-auto mb-6 shadow-lg">
+                    <p class="font-semibold text-xl">Prof. Dosen 2</p>
+                    <p class="text-gray-600 text-base">Ahli Lingkungan</p>
                 </div>
-                <div class="w-32">
-                    <img src="https://via.placeholder.com/150" alt="Team Member" class="rounded-full mx-auto mb-2">
-                    <p class="font-semibold">Emily Johnson</p>
-                    <p class="text-gray-600 text-sm">Threat Researcher</p>
+                <div class="w-40">
+                    <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=160&q=80" alt="Dosen 3" class="rounded-full mx-auto mb-6 shadow-lg">
+                    <p class="font-semibold text-xl">Dr. Dosen 3</p>
+                    <p class="text-gray-600 text-base">Peneliti</p>
                 </div>
             </div>
-        </div>
+        </section>
 
         <!-- Final Call to Action -->
-        <div class="bg-gray-800 text-white text-center py-12 rounded-lg mt-12">
-            <h2 class="text-2xl font-bold mb-4">Don't Hesitate. Get Started Now.</h2>
-            <a href="#" class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 px-6 rounded">Request a Demo</a>
-        </div>
+        <section class="bg-gray-900 text-white text-center py-20 rounded-lg mt-20 shadow-xl">
+            <h2 class="text-4xl font-bold mb-6">Mulai Karir Anda di Industri Proses & Manufaktur.</h2>
+            <a href="#" class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-4 px-12 rounded-lg shadow-lg transition duration-300">Hubungi Kami</a>
+        </section>
+        @include('components.animations')
     </div>
 </x-app-layout>
