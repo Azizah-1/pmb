@@ -44,6 +44,24 @@ class Camaba extends Model
         return $this->belongsTo(User::class, 'user_id');
     }
 
+    // Relationship ke DataSekolahCamaba
+    public function dataSekolah()
+    {
+        return $this->hasOne(DataSekolahCamaba::class, 'id', 'user_id');
+    }
+
+    // Relationship ke DataAyah
+    public function dataAyah()
+    {
+        return $this->hasOne(DataAyah::class, 'id', 'user_id');
+    }
+
+    // Relationship ke DataIbu
+    public function dataIbu()
+    {
+        return $this->hasOne(DataIbu::class, 'id', 'user_id');
+    }
+
     // Accessor untuk jenis kelamin lengkap
     public function getJenisKelaminLengkapAttribute()
     {

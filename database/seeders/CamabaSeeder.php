@@ -5,6 +5,9 @@ namespace Database\Seeders;
 use Illuminate\Database\Seeder;
 use App\Models\User;
 use App\Models\Camaba;
+use App\Models\DataSekolahCamaba;
+use App\Models\DataAyah;
+use App\Models\DataIbu;
 use Illuminate\Support\Facades\Hash;
 
 class CamabaSeeder extends Seeder
@@ -38,6 +41,42 @@ class CamabaSeeder extends Seeder
             'nomor_telp_hp' => '081234567890',
         ]);
 
+        DataSekolahCamaba::firstOrCreate([
+            'id' => $user1->id,
+        ], [
+            'nama_sekolah' => 'SMA Negeri 1 Jakarta',
+            'jurusan' => 'IPA',
+            'no_ijazah' => 'DN-123456789',
+            'alamat_sekolah' => 'Jl. Sudirman No. 1, Jakarta Pusat',
+            'nomor_telepon' => '021-1234567',
+        ]);
+
+        DataAyah::firstOrCreate([
+            'id' => $user1->id,
+        ], [
+            'nama_ayah' => 'Budi Santoso',
+            'pekerjaan' => 'Pegawai Negeri',
+            'agama' => 'Islam',
+            'alamat' => 'Jl. Merdeka No. 123',
+            'kecamatan' => 'Menteng',
+            'desa' => 'Menteng',
+            'nomor_rumah' => '123',
+            'no_telp' => '081234567891',
+        ]);
+
+        DataIbu::firstOrCreate([
+            'id' => $user1->id,
+        ], [
+            'nama_ibu' => 'Siti Aminah',
+            'pekerjaan' => 'Ibu Rumah Tangga',
+            'agama' => 'Islam',
+            'alamat' => 'Jl. Merdeka No. 123',
+            'kecamatan' => 'Menteng',
+            'desa' => 'Menteng',
+            'nomor_rumah' => '123',
+            'no_telp' => '081234567892',
+        ]);
+
         // Data 2
         $user2 = User::firstOrCreate([
             'email' => 'siti.nurhaliza@email.com',
@@ -63,6 +102,42 @@ class CamabaSeeder extends Seeder
             'provinsi' => 'Jawa Barat',
             'nomor_rumah' => '456',
             'nomor_telp_hp' => '081298765432',
+        ]);
+
+        DataSekolahCamaba::firstOrCreate([
+            'id' => $user2->id,
+        ], [
+            'nama_sekolah' => 'SMA Negeri 2 Bandung',
+            'jurusan' => 'IPS',
+            'no_ijazah' => 'DN-987654321',
+            'alamat_sekolah' => 'Jl. Asia Afrika No. 2, Bandung',
+            'nomor_telepon' => '022-7654321',
+        ]);
+
+        DataAyah::firstOrCreate([
+            'id' => $user2->id,
+        ], [
+            'nama_ayah' => 'Joko Widodo',
+            'pekerjaan' => 'Wiraswasta',
+            'agama' => 'Islam',
+            'alamat' => 'Jl. Asia Afrika No. 456',
+            'kecamatan' => 'Sumur Bandung',
+            'desa' => 'Braga',
+            'nomor_rumah' => '456',
+            'no_telp' => '081298765433',
+        ]);
+
+        DataIbu::firstOrCreate([
+            'id' => $user2->id,
+        ], [
+            'nama_ibu' => 'Ani Susanti',
+            'pekerjaan' => 'Guru',
+            'agama' => 'Islam',
+            'alamat' => 'Jl. Asia Afrika No. 456',
+            'kecamatan' => 'Sumur Bandung',
+            'desa' => 'Braga',
+            'nomor_rumah' => '456',
+            'no_telp' => '081298765434',
         ]);
     }
 }
