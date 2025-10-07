@@ -8,6 +8,7 @@ use App\Models\Camaba;
 use App\Models\DataSekolahCamaba;
 use App\Models\DataAyah;
 use App\Models\DataIbu;
+use App\Models\DataWali;
 use Illuminate\Support\Facades\Hash;
 
 class CamabaSeeder extends Seeder
