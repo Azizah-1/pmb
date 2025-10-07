@@ -15,7 +15,7 @@
             <div class="hidden sm:flex sm:space-x-6 sm:items-center">
                 <a href="{{ route('beranda') }}" class="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-base font-medium">Beranda</a>
 
-                <x-dropdown align="left" width="48" contentClasses="py-1 bg-white">
+                <x-dropdown align="left" width="48" contentClasses="py-1 bg-cream border border-brand">
                     <x-slot name="trigger">
                         <button class="inline-flex items-center text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-base font-medium focus:outline-none">
                             Jurusan
