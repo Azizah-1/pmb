@@ -1,5 +1,5 @@
 <x-app-layout>
-    <div class="min-h-screen px-6 md:px-8 py-10" style="background-color: #f7ede1;">
+    <div class="min-h-screen px-6 md:px-8 py-10" style="background-color: #f8e3c9;">
         <div class="max-w-6xl mx-auto space-y-16">
 
             <!-- Hero: light-orange text card + dark-orange photo -->
@@ -25,11 +25,11 @@
             </section>
 
             <!-- Mirrored section: dark-orange photo + light-orange rounded text overlapping -->
-            <section class="relative">
+            <section class="relative" style="margin: 40px 0px 0px 0px">
                 <div class="flex flex-col md:flex-row items-center gap-8">
                     <div class="md:w-1/2 order-2 md:order-1">
                         <div class="bg-[#F79436] rounded-md overflow-hidden shadow-lg h-36 md:h-56">
-                            <img src="{{ asset('itpb.png') }}" alt="dummy-2" class="object-cover w-full h-full" />
+                            <img src="{{ asset('news1.jpg') }}" alt="dummy-2" class="object-cover w-full h-full" />
                         </div>
                     </div>
 
@@ -44,21 +44,21 @@
             </section>
 
             <!-- Gallery: dark-orange cards with 4 dummy photos, centered carousel-like behavior -->
-            <section>
+            <section style="margin: 40px 0px 0px 0px">
                 <h4 class="text-lg font-semibold mb-4">Galeri Kegiatan</h4>
 
-                <div class="mx-auto max-w-1xl h-64">
+                <div class="mx-auto max-w-1xl h-32">
                     <div id="gallery" class="flex gap-6 overflow-x-auto pb-4" style="scroll-behavior: smooth;">
-                        <div class="slide w-[320px] flex-shrink-0 bg-[#F79436] rounded-md overflow-hidden shadow-md">
+                        <div class="slide w-[200px] flex-shrink-0 bg-[#F79436] rounded-md overflow-hidden shadow-md">
                             <img src="{{ asset('news.jpg') }}" alt="gal1" class="w-full h-56 object-cover">
                         </div>
-                        <div class="slide w-[320px] flex-shrink-0 bg-[#F79436] rounded-md overflow-hidden shadow-md">
+                        <div class="slide w-[200px] flex-shrink-0 bg-[#F79436] rounded-md overflow-hidden shadow-md">
                             <img src="{{ asset('news.jpg') }}" alt="gal2" class="w-full h-56 object-cover">
                         </div>
-                        <div class="slide w-[320px] flex-shrink-0 bg-[#F79436] rounded-md overflow-hidden shadow-md">
+                        <div class="slide w-[200px] flex-shrink-0 bg-[#F79436] rounded-md overflow-hidden shadow-md">
                             <img src="{{ asset('itpb.png') }}" alt="gal3" class="w-full h-56 object-cover">
                         </div>
-                        <div class="slide w-[320px] flex-shrink-0 bg-[#F79436] rounded-md overflow-hidden shadow-md">
+                        <div class="slide w-[200px] flex-shrink-0 bg-[#F79436] rounded-md overflow-hidden shadow-md">
                             <img src="{{ asset('news.jpg') }}" alt="gal4" class="w-full h-56 object-cover">
                         </div>
                     </div>
