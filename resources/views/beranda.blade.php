@@ -3,9 +3,9 @@
         <div class="max-w-6xl mx-auto space-y-16">
 
             <!-- Hero: light-orange text card + dark-orange photo -->
-            <section class="relative">
+            <section class="relative" >
                 <div class="flex flex-col md:flex-row items-center gap-8">
-                    <div class="md:w-1/2 z-20">
+                    <div class="md:w-1/2 z-20" style="background-color: rgb(255, 176, 92); border-radius:10px; ">
                         <div class="bg-[#F9C8A8] rounded-2xl p-8 shadow-md" style="min-height:260px;">
                             <h2 class="text-2xl font-bold mb-3">Jadilah Bagian dari Masa Depan Energi!</h2>
                             <p class="text-base mb-4">Institut Teknologi Petroleum Balongan membuka kesempatan bagi calon pemimpin dan inovator di sektor energi.</p>
@@ -34,10 +34,51 @@
                     </div>
 
                     <div class="md:w-1/2 order-1 md:order-2 z-20 -mt-12 md:-mt-0">
-                        <div class="bg-[#F9C8A8] rounded-2xl p-6 shadow-md w-full" style="max-width:420px;">
+                        <div class="bg-[#F9C8A8] rounded-2xl p-6 shadow-md w-full" style="max-width:420px; background-color: rgb(255, 176, 92); border-radius:10px;">
                             <h3 class="text-xl font-bold mb-2">Program Magang & Pelatihan Industri</h3>
                             <p class="text-sm mb-3">Dapatkan pengalaman lapangan di perusahaan minyak dan gas mitra kami. Program intensif dengan sertifikat.</p>
                             <a href="#" class="inline-block bg-white text-black px-3 py-2 rounded-md font-medium">Pelajari Lebih Lanjut</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {{-- blok 3 --}}
+            <section class="relative" style="margin: 40px 0px 0px 0px">
+                <div class="flex flex-col md:flex-row items-center gap-8">
+                    <div class="md:w-1/2 z-20" style="background-color: rgb(255, 176, 92); border-radius:10px; ">
+                        <div class="bg-[#F9C8A8] rounded-2xl p-8 shadow-md" style="min-height:260px;">
+                            <h2 class="text-2xl font-bold mb-3">Jadilah Bagian dari Masa Depan Energi!</h2>
+                            <p class="text-base mb-4">Institut Teknologi Petroleum Balongan membuka kesempatan bagi calon pemimpin dan inovator di sektor energi.</p>
+                            <p class="font-semibold">Penerimaan Mahasiswa Baru</p>
+                            <p class="mb-3">Gelombang I: 25 Agustus - 25 September 2025</p>
+                            <p class="text-sm">Daftar sekarang dan wujudkan karirmu di dunia teknologi dan bisnis perminyakan!</p>
+                            {{-- <a href="{{ route('daftar') }}" class="inline-block mt-4 bg-white text-black font-semibold px-4 py-2 rounded-lg">Daftar Sekarang</a> --}}
+                        </div>
+                    </div>
+
+                    <div class="md:w-1/2">
+                        <div class="bg-[#F79436] rounded-md overflow-hidden shadow-lg md:-ml-12 h-40 md:h-56">
+                            <img src="{{ asset('news1.jpg') }}" alt="dummy" class="object-cover w-full h-full" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {{-- blok 4 --}}
+            <section class="relative" style="margin: 40px 0px 0px 0px">
+                <div class="flex flex-col md:flex-row items-center gap-8">
+                    <div class="md:w-1/2 order-2 md:order-1">
+                        <div class="bg-[#F79436] rounded-md overflow-hidden shadow-lg h-36 md:h-56">
+                            <img src="{{ asset('news1.jpg') }}" alt="dummy-2" class="object-cover w-full h-full" />
+                        </div>
+                    </div>
+
+                    <div class="md:w-1/2 order-1 md:order-2 z-20 -mt-12 md:-mt-0">
+                        <div class="bg-[#F9C8A8] rounded-2xl p-6 shadow-md w-full" style="max-width:420px; background-color: rgb(255, 176, 92); border-radius:10px;">
+                            <h3 class="text-xl font-bold mb-2">Program Magang & Pelatihan Industri</h3>
+                            <p class="text-sm mb-3">Dapatkan pengalaman lapangan di perusahaan minyak dan gas mitra kami. Program intensif dengan sertifikat.</p>
+                            {{-- <a href="#" class="inline-block bg-white text-black px-3 py-2 rounded-md font-medium">Pelajari Lebih Lanjut</a> --}}
                         </div>
                     </div>
                 </div>
