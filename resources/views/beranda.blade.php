@@ -88,19 +88,19 @@
             <section style="margin: 40px 0px 0px 0px">
                 <h4 class="text-lg font-semibold mb-4">Galeri Kegiatan</h4>
 
-                <div class="mx-auto max-w-1xl h-32">
-                    <div id="gallery" class="flex gap-6 overflow-x-auto pb-4" style="scroll-behavior: smooth;">
-                        <div class="slide w-[200px] flex-shrink-0 bg-[#F79436] rounded-md overflow-hidden shadow-md">
-                            <img src="{{ asset('news.jpg') }}" alt="gal1" class="w-full h-56 object-cover">
+                    <div class="mx-auto max-w-1xl">
+                    <div id="gallery" class="flex gap-4 md:gap-6 overflow-x-auto pb-4" style="scroll-behavior: smooth;">
+                        <div class="slide w-[120px] md:w-[420px] h-24 md:h-[320px] flex-shrink-0 rounded-2xl overflow-hidden shadow-md bg-[#F79436]">
+                            <img src="{{ asset('news1.jpg') }}" alt="gal1" class="w-full h-full object-cover">
                         </div>
-                        <div class="slide w-[200px] flex-shrink-0 bg-[#F79436] rounded-md overflow-hidden shadow-md">
-                            <img src="{{ asset('news.jpg') }}" alt="gal2" class="w-full h-56 object-cover">
+                        <div class="slide w-[120px] md:w-[420px] h-24 md:h-[320px] flex-shrink-0 rounded-2xl overflow-hidden shadow-md bg-[#F79436]">
+                            <img src="{{ asset('news1.jpg') }}" alt="gal2" class="w-full h-full object-cover">
                         </div>
-                        <div class="slide w-[200px] flex-shrink-0 bg-[#F79436] rounded-md overflow-hidden shadow-md">
-                            <img src="{{ asset('itpb.png') }}" alt="gal3" class="w-full h-56 object-cover">
+                        <div class="slide w-[120px] md:w-[420px] h-24 md:h-[320px] flex-shrink-0 rounded-2xl overflow-hidden shadow-md bg-[#F79436]">
+                            <img src="{{ asset('itpb.png') }}" alt="gal3" class="w-full h-full object-cover">
                         </div>
-                        <div class="slide w-[200px] flex-shrink-0 bg-[#F79436] rounded-md overflow-hidden shadow-md">
-                            <img src="{{ asset('news.jpg') }}" alt="gal4" class="w-full h-56 object-cover">
+                        <div class="slide w-[120px] md:w-[420px] h-24 md:h-[320px] flex-shrink-0 rounded-2xl overflow-hidden shadow-md bg-[#F79436]">
+                            <img src="{{ asset('news1.jpg') }}" alt="gal4" class="w-full h-full object-cover">
                         </div>
                     </div>
 
@@ -112,10 +112,10 @@
                         </button>
 
                         <div class="flex items-center gap-2" id="gallery-dots">
-                            <button onclick="galleryTo(0)" aria-label="Slide 1" class="w-4 h-4 rounded-sm bg-[#F9C8A8]" ></button>
-                            <button onclick="galleryTo(1)" aria-label="Slide 2" class="w-4 h-4 rounded-sm bg-[#F9C8A8]" ></button>
-                            <button onclick="galleryTo(2)" aria-label="Slide 3" class="w-4 h-4 rounded-sm bg-[#F9C8A8]" ></button>
-                            <button onclick="galleryTo(3)" aria-label="Slide 4" class="w-4 h-4 rounded-sm bg-[#F9C8A8]" ></button>
+                            <button onclick="galleryTo(0)" aria-label="Slide 1" class="w-3 h-3 md:w-4 md:h-4 rounded-sm bg-[#F9C8A8]" ></button>
+                            <button onclick="galleryTo(1)" aria-label="Slide 2" class="w-3 h-3 md:w-4 md:h-4 rounded-sm bg-[#F9C8A8]" ></button>
+                            <button onclick="galleryTo(2)" aria-label="Slide 3" class="w-3 h-3 md:w-4 md:h-4 rounded-sm bg-[#F9C8A8]" ></button>
+                            <button onclick="galleryTo(3)" aria-label="Slide 4" class="w-3 h-3 md:w-4 md:h-4 rounded-sm bg-[#F9C8A8]" ></button>
                         </div>
 
                         <button onclick="galleryNext()" aria-label="Scroll right" class="gallery-btn w-10 h-10 bg-[#F9C8A8] rounded-md shadow-sm flex items-center justify-center">
