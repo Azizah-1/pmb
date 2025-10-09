@@ -11,6 +11,8 @@ return new class extends Migration
      */
     public function up(): void
     {
+        Schema::disableForeignKeyConstraints();
+
         Schema::create('data_wali', function (Blueprint $table) {
             // Foreign key ke users table
             $table->foreignId('id')
