@@ -3,27 +3,38 @@
         <!-- Hero -->
         <header class="bg-brand-cream border-b border-brand-jeruk-100">
             <div class="max-w-6xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-                <h1 class="text-3xl font-extrabold text-brand-jeruk dark:text-brand-jeruk">Kebijakan Beasiswa</h1>
-                <p class="mt-3 text-lg text-gray-700 max-w-2xl">Informasi lengkap terkait kebijakan beasiswa: syarat, proses seleksi, hak dan kewajiban penerima, serta mekanisme pengajuan.</p>
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/2">
+                        <h1 class="text-3xl font-extrabold text-brand-jeruk dark:text-brand-jeruk">Kebijakan Beasiswa</h1>
+                        <p class="mt-3 text-lg text-gray-700 max-w-2xl">Informasi lengkap terkait kebijakan beasiswa: syarat, proses seleksi, hak dan kewajiban penerima, serta mekanisme pengajuan.</p>
+                    </div>
+                    <div class="md:w-1/2 mt-6 md:mt-0">
+                        <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=600&h=400&fit=crop&crop=center" alt="Scholarship" class="rounded-lg shadow-lg w-full h-64 object-cover">
+                    </div>
+                </div>
             </div>
         </header>
 
         <main class="max-w-6xl mx-auto p-6 sm:p-8">
             <!-- Summary cards -->
             <section aria-labelledby="kebijakan-overview" class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4 mb-8">
-                <div class="bg-brand-jeruk-100 p-4 rounded-lg shadow-sm">
+                <div class="bg-brand-jeruk-100 p-4 rounded-lg shadow-sm relative overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=200&h=150&fit=crop&crop=center" alt="Requirements" class="w-full h-20 object-cover rounded mb-3">
                     <h3 class="text-xl font-semibold text-brand-jeruk">Syarat</h3>
                     <p class="mt-2 text-sm text-gray-700">Ketentuan akademik dan administratif minimal yang harus dipenuhi pelamar.</p>
                 </div>
-                <div class="bg-brand-cream p-4 rounded-lg shadow-sm">
+                <div class="bg-brand-cream p-4 rounded-lg shadow-sm relative overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=200&h=150&fit=crop&crop=center" alt="Selection Process" class="w-full h-20 object-cover rounded mb-3">
                     <h3 class="text-xl font-semibold text-brand-jeruk">Proses Seleksi</h3>
                     <p class="mt-2 text-sm text-gray-700">Tahapan seleksi, penilaian, dan jadwal pengumuman bagi pendaftar.</p>
                 </div>
-                <div class="bg-white p-4 rounded-lg shadow-sm border">
+                <div class="bg-white p-4 rounded-lg shadow-sm border relative overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=200&h=150&fit=crop&crop=center" alt="Rights" class="w-full h-20 object-cover rounded mb-3">
                     <h3 class="text-xl font-semibold text-brand-jeruk">Hak Penerima</h3>
                     <p class="mt-2 text-sm text-gray-700">Fasilitas, tunjangan, dan dukungan akademik yang diberikan kepada penerima beasiswa.</p>
                 </div>
-                <div class="bg-white p-4 rounded-lg shadow-sm border">
+                <div class="bg-white p-4 rounded-lg shadow-sm border relative overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=150&fit=crop&crop=center" alt="Obligations" class="w-full h-20 object-cover rounded mb-3">
                     <h3 class="text-xl font-semibold text-brand-jeruk">Kewajiban</h3>
                     <p class="mt-2 text-sm text-gray-700">Kewajiban pelaporan, kinerja akademik, dan ketentuan pengembalian bila melanggar perjanjian.</p>
                 </div>
