@@ -11,6 +11,13 @@ export default {
 
     theme: {
         extend: {
+            colors: {
+                brand: {
+                    jeruk: '#FF8C42', // soft orange (jeruk lembut)
+                    'jeruk-100': '#FFE9DA',
+                    cream: '#FFF5E6',
+                },
+            },
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
             },

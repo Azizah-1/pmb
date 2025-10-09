@@ -1,11 +1,12 @@
-# TODO: Add Dropdown Menu for Materi on Jurusan Page
+# TODO: Optimize Laravel Server Performance
 
-- [x] Add 6 new routes in routes/web.php for each materi (rkk-s1, teknik-lingkungan-s1, teknik-perminyakan-s1, fire-safety-d3, tekim-d3, pe-d3)
-- [x] Create subdirectory resources/views/jurusan/
-- [x] Create view file resources/views/jurusan/rkk-s1.blade.php
-- [x] Create view file resources/views/jurusan/teknik-lingkungan-s1.blade.php
-- [x] Create view file resources/views/jurusan/teknik-perminyakan-s1.blade.php
-- [x] Create view file resources/views/jurusan/fire-safety-d3.blade.php
-- [x] Create view file resources/views/jurusan/tekim-d3.blade.php
-- [x] Create view file resources/views/jurusan/pe-d3.blade.php
-- [x] Edit resources/views/jurusan.blade.php to add dropdown menu with links to each materi
+- [ ] Check if Vite dev server is running; if not, start npm run dev
+- [ ] Clear Laravel application cache
+- [ ] Clear config cache
+- [ ] Clear route cache
+- [ ] Clear view cache
+- [ ] Build Vite assets for production
+- [ ] Optimize images in public folder
+- [ ] Check .env for APP_DEBUG and ensure it's false
+- [ ] Suggest using XAMPP Apache instead of php artisan serve if applicable
+- [ ] Test server speed after optimizations
