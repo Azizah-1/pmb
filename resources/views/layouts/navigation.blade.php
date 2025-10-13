@@ -39,8 +39,8 @@
                 <a href="{{ route('kontak') }}" class="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-base font-medium">Kontak</a>
             </div>
 
-            <!-- Right box: Daftar button with login check -->
-            <div class="hidden sm:flex sm:items-center">
+            <!-- Right box: Daftar button with login/profile icon grouped together -->
+            <div class="hidden sm:flex sm:items-center sm:space-x-4" style="gap: 15px">
                 @if(Auth::check())
                     <a href="{{ route('daftar') }}" class="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
                         Daftar
@@ -50,6 +50,28 @@
                         Daftar
                     </a>
                 @endif
+
+                <div class="flex items-center">
+                    @auth
+                        <x-dropdown align="right" width="48">
+                            <x-slot name="trigger">
+                                <button class="inline-flex items-center justify-center h-10 w-10 rounded-full bg-orange-50 text-orange-600 hover:bg-orange-100 focus:outline-none z-10" aria-label="Open user menu">
+                                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 12a5 5 0 100-10 5 5 0 000 10zm0 2c-5.33 0-8 2.67-8 4v2h16v-2c0-1.33-2.67-4-8-4z"/>
+                                    </svg>
+                                </button>
+                            </x-slot>
+
+                            <x-slot name="content">
+                                <x-dropdown-link href="{{ route('profile.edit') }}">Profile</x-dropdown-link>
+                                <form method="POST" action="{{ route('logout') }}">
+                                    @csrf
+                                    <x-dropdown-link :href="route('logout')" onclick="event.preventDefault(); this.closest('form').submit();">Logout</x-dropdown-link>
+                                </form>
+                            </x-slot>
+                        </x-dropdown>
+                    @endauth
+                </div>
             </div>
 
             <!-- Hamburger -->
