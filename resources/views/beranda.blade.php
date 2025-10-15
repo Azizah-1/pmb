@@ -1,12 +1,12 @@
 <x-app-layout>
-    <div class="min-h-screen px-6 md:px-8 py-10" style="background-color: #f8e3c9;">
+    <div class="min-h-screen px-6 md:px-8 py-10" style="background-color: #f8f7f5;">
         <div class="max-w-6xl mx-auto space-y-16">
 
             <!-- Hero: light-orange text card + dark-orange photo -->
             <section class="relative" >
                 <div class="flex flex-col md:flex-row items-center gap-8">
-                    <div class="md:w-1/2 z-20" style="background-color: rgb(255, 176, 92); border-radius:10px; ">
-                        <div class="bg-[#F9C8A8] rounded-2xl p-8 shadow-md" style="min-height:260px;">
+                    <div class="md:w-1/2 z-20" style="background-color: rgb(255, 176, 92); border-radius:10px; width:550px;">
+                        <div class="rounded-2xl p-8 shadow-md" style="min-height:260px;">
                             <h2 class="text-2xl font-bold mb-3">Jadilah Bagian dari Masa Depan Energi!</h2>
                             <p class="text-base mb-4">Institut Teknologi Petroleum Balongan membuka kesempatan bagi calon pemimpin dan inovator di sektor energi.</p>
                             <p class="font-semibold">Penerimaan Mahasiswa Baru</p>
@@ -17,8 +17,15 @@
                     </div>
 
                     <div class="md:w-1/2">
-                        <div class="bg-[#F79436] rounded-md overflow-hidden shadow-lg md:-ml-12 h-40 md:h-56">
-                            <img src="{{ asset('news1.jpg') }}" alt="dummy" class="object-cover w-full h-full" />
+                        <!-- decorative orange box behind the photo -->
+                        <div class="relative" style="width: 545px; height:365px; margin-left: 20px;">
+                            <!-- orange background 'shadow' (offset) -->
+                            <div class="absolute bg-[#F79436] rounded-lg z-0" style="inset:0; transform: translate(16px,-16px); border-radius:12px;"></div>
+
+                            <!-- image card on top -->
+                            <div class="relative z-10 rounded-2xl overflow-hidden shadow-lg" style="width:100%; height:100%;">
+                                <img src="{{ asset('news1.jpg') }}" alt="dummy" class="object-cover w-full h-full" style="display:block;" />
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -28,8 +35,11 @@
             <section class="relative" style="margin: 40px 0px 0px 0px">
                 <div class="flex flex-col md:flex-row items-center gap-8">
                     <div class="md:w-1/2 order-2 md:order-1">
-                        <div class="bg-[#F79436] rounded-md overflow-hidden shadow-lg h-36 md:h-56">
-                            <img src="{{ asset('news1.jpg') }}" alt="dummy-2" class="object-cover w-full h-full" />
+                        <div class="relative" style="width: 545px; height:365px; margin-left: 20px;">
+                            <div class="absolute bg-[#F79436] rounded-lg z-0" style="inset:0; transform: translate(-16px,16px); border-radius:12px;"></div>
+                            <div class="relative z-10 rounded-2xl overflow-hidden shadow-lg" style="width:100%; height:100%;">
+                                <img src="{{ asset('news1.jpg') }}" alt="dummy-2" class="object-cover w-full h-full" style="display:block;" />
+                            </div>
                         </div>
                     </div>
 
@@ -58,8 +68,11 @@
                     </div>
 
                     <div class="md:w-1/2">
-                        <div class="bg-[#F79436] rounded-md overflow-hidden shadow-lg md:-ml-12 h-40 md:h-56">
-                            <img src="{{ asset('news1.jpg') }}" alt="dummy" class="object-cover w-full h-full" />
+                        <div class="relative" style="width: 545px; height:365px; margin-left: 20px;">
+                            <div class="absolute bg-[#F79436] rounded-lg z-0" style="inset:0; transform: translate(16px,-16px); border-radius:12px;"></div>
+                            <div class="relative z-10 rounded-2xl overflow-hidden shadow-lg" style="width:100%; height:100%;">
+                                <img src="{{ asset('news1.jpg') }}" alt="dummy" class="object-cover w-full h-full" style="display:block;" />
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -69,8 +82,11 @@
             <section class="relative" style="margin: 40px 0px 0px 0px">
                 <div class="flex flex-col md:flex-row items-center gap-8">
                     <div class="md:w-1/2 order-2 md:order-1">
-                        <div class="bg-[#F79436] rounded-md overflow-hidden shadow-lg h-36 md:h-56">
-                            <img src="{{ asset('news1.jpg') }}" alt="dummy-2" class="object-cover w-full h-full" />
+                        <div class="relative" style="width: 545px; height:365px; margin-left: 20px;">
+                            <div class="absolute bg-[#F79436] rounded-lg z-0" style="inset:0; transform: translate(-16px,16px); border-radius:12px;"></div>
+                            <div class="relative z-10 rounded-2xl overflow-hidden shadow-lg" style="width:100%; height:100%;">
+                                <img src="{{ asset('news1.jpg') }}" alt="dummy-2" class="object-cover w-full h-full" style="display:block;" />
+                            </div>
                         </div>
                     </div>
 

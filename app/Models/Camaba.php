@@ -11,13 +11,13 @@ class Camaba extends Model
 
     protected $table = 'camaba';
     
-    // Primary key bukan auto increment, tapi foreign key
-    protected $primaryKey = 'user_id';
+    // Primary key is the 'id' column which references users.id
+    protected $primaryKey = 'id';
     public $incrementing = false;
     protected $keyType = 'int';
     
     protected $fillable = [
-        'user_id',
+        'id',
         'no_pendaftaran',
         'nama_lengkap',
         'tempat_lahir',
@@ -35,7 +35,7 @@ class Camaba extends Model
 
     protected $casts = [
         'tanggal_lahir' => 'date',
-        'user_id' => 'integer'
+        'id' => 'integer'
     ];
 
     // Relationship ke User model
