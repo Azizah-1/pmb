@@ -36,5 +36,24 @@
         </div>
         {{-- allow views to push additional scripts --}}
         @stack('scripts')
+        @push('scripts')
+            <script>
+                document.addEventListener('DOMContentLoaded', function(){
+                    const guestDaftar = document.getElementById('guest-daftar');
+                    if (!guestDaftar) return;
+                    guestDaftar.addEventListener('click', function(e){
+                        const authShell = document.getElementById('authShell');
+                        if (authShell) {
+                            // prevent navigation and trigger register panel if present
+                            e.preventDefault();
+                            authShell.classList.add('register-active');
+                            // create a focusable element on panel
+                            const panelContent = authShell.querySelector('.panel-content');
+                            if (panelContent) panelContent.focus?.();
+                        }
+                    });
+                });
+            </script>
+        @endpush
     </body>
 </html>
