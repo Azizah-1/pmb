@@ -1,28 +1,28 @@
 <x-app-layout>
     <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
         <!-- Hero Section -->
-        <section class="relative bg-white shadow-md rounded-lg overflow-hidden mt-8">
+        <section class="relative bg-orange-50 shadow-md rounded-lg overflow-hidden mt-8">
             <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1200&q=80" alt="Hero Image" class="w-full h-80 object-cover">
-            <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-center p-10">
+            <div class="absolute inset-0 bg-orange-900 bg-opacity-60 flex flex-col justify-center items-center text-center p-10">
                 <h1 class="text-white text-5xl font-extrabold mb-4 leading-tight max-w-4xl">Teknik Lingkungan S1</h1>
-                <p class="text-white text-xl mb-8 max-w-3xl">Program studi yang fokus pada pengelolaan lingkungan dan keberlanjutan.</p>
-                <a href="#" class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-8 rounded-lg shadow-lg transition duration-300">Learn More</a>
+                <p class="text-orange-100 text-xl mb-8 max-w-3xl">Program studi yang fokus pada pengelolaan lingkungan dan keberlanjutan.</p>
+                <a href="#" class="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 px-8 rounded-lg shadow-lg transition duration-300">Learn More</a>
             </div>
         </section>
 
         <!-- Features Section -->
         <section class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-12">
-            <div class="bg-gray-50 p-8 rounded-lg shadow hover:shadow-lg transition-shadow duration-300 text-center">
+            <div class="bg-orange-100 p-8 rounded-lg shadow hover:shadow-lg transition-shadow duration-300 text-center">
                 <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=72&q=80" alt="Pengelolaan Lingkungan" class="mx-auto mb-6 rounded-full">
                 <h3 class="text-2xl font-semibold mb-3">Pengelolaan Lingkungan</h3>
                 <p class="text-gray-700 leading-relaxed">Pelajari cara mengelola sumber daya alam dan lingkungan secara berkelanjutan.</p>
             </div>
-            <div class="bg-gray-50 p-8 rounded-lg shadow hover:shadow-lg transition-shadow duration-300 text-center">
+            <div class="bg-orange-100 p-8 rounded-lg shadow hover:shadow-lg transition-shadow duration-300 text-center">
                 <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=72&q=80" alt="Teknologi Ramah Lingkungan" class="mx-auto mb-6 rounded-full">
                 <h3 class="text-2xl font-semibold mb-3">Teknologi Ramah Lingkungan</h3>
                 <p class="text-gray-700 leading-relaxed">Kembangkan teknologi yang mendukung keberlanjutan lingkungan.</p>
             </div>
-            <div class="bg-gray-50 p-8 rounded-lg shadow hover:shadow-lg transition-shadow duration-300 text-center">
+            <div class="bg-orange-100 p-8 rounded-lg shadow hover:shadow-lg transition-shadow duration-300 text-center">
                 <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=72&q=80" alt="Konservasi Sumber Daya" class="mx-auto mb-6 rounded-full">
                 <h3 class="text-2xl font-semibold mb-3">Konservasi Sumber Daya</h3>
                 <p class="text-gray-700 leading-relaxed">Fokus pada pelestarian sumber daya alam untuk generasi mendatang.</p>
@@ -30,14 +30,14 @@
         </section>
 
         <!-- Call to Action Banner -->
-        <section class="bg-indigo-700 text-white text-center py-20 rounded-lg mt-20 shadow-lg">
+        <section class="bg-orange-600 text-white text-center py-20 rounded-lg mt-20 shadow-lg">
             <h2 class="text-4xl font-bold mb-6 max-w-3xl mx-auto">Bergabunglah dengan Program Studi Teknik Lingkungan S1.</h2>
-            <a href="#" class="bg-white text-indigo-700 font-semibold py-4 px-12 rounded-lg shadow-md hover:bg-gray-100 transition duration-300">Daftar Sekarang</a>
+            <a href="#" class="bg-white text-orange-600 font-semibold py-4 px-12 rounded-lg shadow-md hover:bg-orange-100 transition duration-300">Daftar Sekarang</a>
         </section>
 
         <!-- Testimonial Section -->
         <section class="mt-20 max-w-4xl mx-auto px-4">
-            <blockquote class="border-l-8 border-indigo-600 pl-8 italic text-gray-800 text-lg leading-relaxed">
+            <blockquote class="border-l-8 border-orange-500 pl-8 italic text-gray-800 text-lg leading-relaxed">
                 "Program ini memberikan pengetahuan yang mendalam tentang pentingnya menjaga lingkungan."
                 <footer class="mt-6 font-semibold text-right">- Alumni Teknik Lingkungan</footer>
             </blockquote>

@@ -1,18 +1,18 @@
 <x-app-layout>
     <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
         <!-- Hero Section -->
-        <section class="relative bg-white shadow-md rounded-lg overflow-hidden mt-8 animate-up">
+        <section class="relative bg-orange-50 shadow-md rounded-lg overflow-hidden mt-8 animate-up">
             <img src="https://images.unsplash.com/photo-1531058020387-3be344556be6?auto=format&fit=crop&w=1200&q=80" alt="Hero Image" class="w-full h-80 object-cover">
-            <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center items-center text-center p-10">
+            <div class="absolute inset-0 bg-orange-900 bg-opacity-60 flex flex-col justify-center items-center text-center p-10">
                 <h1 class="text-white text-5xl font-extrabold mb-4 leading-tight max-w-4xl">Teknik Kimia D3</h1>
-                <p class="text-white text-xl mb-8 max-w-3xl">Program vokasi yang fokus pada aplikasi proses kimia, pengolahan, dan industri manufaktur.</p>
-                <a href="#" class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-8 rounded-lg shadow-lg transition duration-300">Pelajari Lebih Lanjut</a>
+                <p class="text-orange-100 text-xl mb-8 max-w-3xl">Program vokasi yang fokus pada aplikasi proses kimia, pengolahan, dan industri manufaktur.</p>
+                <a href="#" class="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 px-8 rounded-lg shadow-lg transition duration-300">Pelajari Lebih Lanjut</a>
             </div>
         </section>
 
         <!-- Program Info -->
         <section class="mt-6 max-w-4xl mx-auto px-4 animate-up">
-            <div class="bg-white border rounded-lg p-6 shadow-sm flex flex-col md:flex-row items-start gap-6">
+            <div class="bg-orange-50 border border-orange-200 rounded-lg p-6 shadow-sm flex flex-col md:flex-row items-start gap-6">
                 <div>
                     <p class="text-sm text-gray-500">Gelar yang diberikan</p>
                     <p class="text-xl font-semibold">Ahli Madya (A.Md.) - Teknik Kimia</p>
@@ -25,17 +25,17 @@
         </section>
         <!-- Features Section -->
         <section class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-12">
-            <div class="bg-gray-50 p-8 rounded-lg shadow hover:shadow-lg transition-shadow duration-300 text-center animate-up tilt-on-hover">
+            <div class="bg-orange-100 p-8 rounded-lg shadow hover:shadow-lg transition-shadow duration-300 text-center animate-up tilt-on-hover">
                 <img src="https://images.unsplash.com/photo-1531058020387-3be344556be6?auto=format&fit=crop&w=72&q=80" alt="Reaksi" class="mx-auto mb-6 rounded-full">
                 <h3 class="text-2xl font-semibold mb-3">Kinetika & Reaksi</h3>
                 <p class="text-gray-700 leading-relaxed">Pemahaman laju reaksi dan desain reaktor untuk proses industri.</p>
             </div>
-            <div class="bg-gray-50 p-8 rounded-lg shadow hover:shadow-lg transition-shadow duration-300 text-center animate-up tilt-on-hover">
+            <div class="bg-orange-100 p-8 rounded-lg shadow hover:shadow-lg transition-shadow duration-300 text-center animate-up tilt-on-hover">
                 <img src="https://images.unsplash.com/photo-1542367597-6a1f1b4d5f7e?auto=format&fit=crop&w=72&q=80" alt="Operasi Unit" class="mx-auto mb-6 rounded-full">
                 <h3 class="text-2xl font-semibold mb-3">Operasi Unit</h3>
                 <p class="text-gray-700 leading-relaxed">Distilasi, penukar panas, dan operasi unit penting lainnya.</p>
             </div>
-            <div class="bg-gray-50 p-8 rounded-lg shadow hover:shadow-lg transition-shadow duration-300 text-center animate-up tilt-on-hover">
+            <div class="bg-orange-100 p-8 rounded-lg shadow hover:shadow-lg transition-shadow duration-300 text-center animate-up tilt-on-hover">
                 <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=72&q=80" alt="Kontrol Proses" class="mx-auto mb-6 rounded-full">
                 <h3 class="text-2xl font-semibold mb-3">Kontrol Proses</h3>
                 <p class="text-gray-700 leading-relaxed">Sistem kontrol untuk operasi proses yang stabil dan aman.</p>
@@ -43,14 +43,14 @@
         </section>
 
         <!-- Call to Action Banner -->
-        <section class="bg-indigo-700 text-white text-center py-20 rounded-lg mt-20 shadow-lg">
+        <section class="bg-orange-600 text-white text-center py-20 rounded-lg mt-20 shadow-lg">
             <h2 class="text-4xl font-bold mb-6 max-w-3xl mx-auto">Bergabunglah dengan Program Studi Teknik Kimia D3.</h2>
-            <a href="#" class="bg-white text-indigo-700 font-semibold py-4 px-12 rounded-lg shadow-md hover:bg-gray-100 transition duration-300">Daftar Sekarang</a>
+            <a href="#" class="bg-white text-orange-600 font-semibold py-4 px-12 rounded-lg shadow-md hover:bg-orange-100 transition duration-300">Daftar Sekarang</a>
         </section>
 
         <!-- Testimonial Section -->
         <section class="mt-20 max-w-4xl mx-auto px-4">
-            <blockquote class="border-l-8 border-indigo-600 pl-8 italic text-gray-800 text-lg leading-relaxed">
+            <blockquote class="border-l-8 border-orange-500 pl-8 italic text-gray-800 text-lg leading-relaxed">
                 "Program vokasi yang kuat di praktik laboratorium dan operasi proses industri." 
                 <footer class="mt-6 font-semibold text-right">- Alumni Teknik Kimia D3</footer>
             </blockquote>
