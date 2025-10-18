@@ -28,7 +28,14 @@ class AuthenticatedSessionController extends Controller
 
         $request->session()->regenerate();
 
-        return redirect()->intended(route('dashboard', absolute: false));
+        // If the user hasn't verified their email yet, send them to the
+        // verification notice. Otherwise send them to the public beranda page.
+        $user = auth()->user();
+        if ($user && ! $user->hasVerifiedEmail()) {
+            return redirect()->route('verification.notice');
+        }
+
+        return redirect()->intended(route('beranda', absolute: false));
     }
 
     /**

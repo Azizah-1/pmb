@@ -54,6 +54,15 @@ Route::get('/daftar', function () {
     return view('daftar');
 })->name('daftar');
 
+// Code-based email verification route
+Route::get('/verify-email-code', [\App\Http\Controllers\Auth\EmailVerificationController::class, 'verify'])->name('verify.email.code');
+// Form to enter verification code manually
+Route::get('/verify-email-code/form', function() { return view('auth.verify-code'); })->name('verify.email.code.form');
+// POST /verify-email-code is already handled by EmailVerificationController@verify via GET earlier; allow POST as well
+Route::post('/verify-email-code', [\App\Http\Controllers\Auth\EmailVerificationController::class, 'verify']);
+// Resend code (throttled)
+Route::post('/verify-email-code/resend', [\App\Http\Controllers\Auth\ResendVerificationController::class, 'resend'])->middleware('throttle:2,1')->name('verify.email.code.resend');
+
 // 🔥 TAMBAHKAN AI ROUTES DI SINI
 Route::get('/ai-assistant', function () {
     return view('ai-assistant');

@@ -28,9 +28,14 @@
             {{-- For beranda: render slot without global boxed background or decorative accents --}}
             <div class="min-h-screen relative">
                 @include('layouts.navigation')
-                <main class="relative z-10 w-full">
-                    {{ $slot }}
-                </main>
+                    <main class="relative z-10 w-full">
+                        {{-- Support both component-style ($slot) and classic @section('content') usage --}}
+                        @isset($slot)
+                            {{ $slot }}
+                        @else
+                            @yield('content')
+                        @endisset
+                    </main>
             </div>
         @else
             <div class="min-h-screen !bg-white relative overflow-hidden">
@@ -67,7 +72,12 @@
 
                     <!-- Page Content -->
                     <main class="relative z-10 mx-auto max-w-5xl mt-4 mb-8 px-4 py-6 bg-white rounded-2xl shadow-lg border border-orange-100">
-                        {{ $slot }}
+                        {{-- Support both component-style ($slot) and classic @section('content') usage --}}
+                        @isset($slot)
+                            {{ $slot }}
+                        @else
+                            @yield('content')
+                        @endisset
                     </main>
                 </div>
             </div>

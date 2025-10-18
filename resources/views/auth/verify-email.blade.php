@@ -28,4 +28,10 @@
             </button>
         </form>
     </div>
+
+    <div class="mt-6">
+        <p class="text-sm text-gray-700">Sudah punya kode verifikasi? <a href="{{ route('verify.email.code.form') }}" class="text-indigo-600 hover:underline">Masukkan kode di sini</a>.</p>
+
+        {{-- Dev verification code display removed for security. Codes are delivered by email. --}}
+    </div>
 </x-guest-layout>

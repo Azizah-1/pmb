@@ -91,6 +91,8 @@
                     <h2 class="text-3xl font-extrabold mb-6">Registration</h2>
                     <form method="POST" action="{{ route('register') }}" class="auth-form" autocomplete="on">
                         @csrf
+                        {{-- mark this form as the applicant "daftar-sekarang" action so controller requires verification --}}
+                        <input type="hidden" name="action" value="daftar-sekarang">
                         <div class="input-with-icon">
                             <input id="name" name="name" type="text" placeholder="Full name" required class="auth-input" value="{{ old('name') }}" autocomplete="name" autocapitalize="words">
                             <span class="input-icon icon-user">

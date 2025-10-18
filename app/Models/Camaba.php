@@ -23,6 +23,7 @@ class Camaba extends Model
         'tempat_lahir',
         'tanggal_lahir',
         'jenis_kelamin',
+            'program',
         'agama',
         'alamat',
         'kelurahan',

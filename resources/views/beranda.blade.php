@@ -57,9 +57,9 @@
             <section class="relative" style="margin: 40px 0px 0px 0px">
                 <div class="flex flex-col md:flex-row items-center gap-8">
                     <div class="md:w-1/2 z-20" style="background-color: rgb(255, 176, 92); border-radius:10px; ">
-                        <div class="bg-[#F9C8A8] rounded-2xl p-8 shadow-md" style="min-height:260px;">
+                        <div class="rounded-2xl p-8 shadow-md" style="min-height:260px;">
                             <h2 class="text-2xl font-bold mb-3">Jadilah Bagian dari Masa Depan Energi!</h2>
-                            <p class="text-base mb-4">Institut Teknologi Petroleum Balongan membuka kesempatan bagi calon pemimpin dan inovator di sektor energi.</p>
+                            <p class="text-base mb-4">Institut Teknologi Petroleum Balongan membuka kesempatan bagi calon pemimpin dan inovator di sektor energi mari bergabung untuk jadi bagian dari kami.</p>
                             <p class="font-semibold">Penerimaan Mahasiswa Baru</p>
                             <p class="mb-3">Gelombang I: 25 Agustus - 25 September 2025</p>
                             <p class="text-sm">Daftar sekarang dan wujudkan karirmu di dunia teknologi dan bisnis perminyakan!</p>
@@ -167,16 +167,28 @@
             let currentIndex = 0;
             let slideWidth = 0;
             let gap = 0;
+            let centerOffset = 0;
             let autoplayInterval = 4000; // ms
             let autoplayTimer = null;
             let isPaused = false;
+            let userInteracting = false;
+            let resumeAfterInteractionTimer = null;
 
             function calcSizes() {
                 if (!slides.length) return;
                 const rect = slides[0].getBoundingClientRect();
                 slideWidth = rect.width;
-                const style = window.getComputedStyle(gallery);
-                gap = parseInt(style.columnGap || style.gap || 0, 10) || 0;
+                // Compute gap in pixels robustly: use offsetLeft difference if available
+                if (slides.length > 1) {
+                    gap = Math.round(slides[1].offsetLeft - slides[0].offsetLeft - slideWidth);
+                    if (isNaN(gap) || gap < 0) gap = 0;
+                } else {
+                    gap = 0;
+                }
+                // compute center offset used when centering slides
+                centerOffset = Math.max(0, (gallery.clientWidth - slideWidth) / 2);
+                // ensure currentIndex is within bounds
+                currentIndex = Math.max(0, Math.min(currentIndex, slides.length - 1));
             }
 
             function updateDots() {
@@ -190,7 +202,11 @@
                 if (!gallery) return;
                 const clamped = Math.max(0, Math.min(index, slides.length - 1));
                 currentIndex = clamped;
-                const left = clamped * (slideWidth + gap);
+                // Scroll to the exact slide's offsetLeft so alignment is precise across breakpoints
+                // Prefer centering the target slide in the gallery viewport for a nicer UX.
+                const slide = slides[clamped];
+                let left = Math.round(slide.offsetLeft - centerOffset);
+                if (left < 0) left = 0;
                 gallery.scrollTo({ left, behavior: 'smooth' });
                 updateDots();
             }
@@ -208,6 +224,10 @@
             function startAutoplay() {
                 if (autoplayTimer || isPaused) return;
                 autoplayTimer = setInterval(() => {
+                    if (userInteracting || slides.length <= 1) return;
+                    // Recompute currentIndex from scroll position to avoid drift
+                    const computed = computeCurrentIndexFromScroll();
+                    currentIndex = computed;
                     const next = (currentIndex + 1) % slides.length;
                     galleryTo(next);
                 }, autoplayInterval);
@@ -220,11 +240,39 @@
                 }
             }
 
-            // pause on hover/focus
+            function computeCurrentIndexFromScroll(){
+                if (!gallery || !slides.length) return 0;
+                const leftPos = gallery.scrollLeft;
+                let nearest = 0;
+                let nearestDist = Infinity;
+                slides.forEach((s, i) => {
+                    // account for centering offset used when programmatically scrolling
+                    const dist = Math.abs(leftPos - (s.offsetLeft - centerOffset));
+                    if (dist < nearestDist) { nearestDist = dist; nearest = i; }
+                });
+                return Math.max(0, Math.min(nearest, slides.length - 1));
+            }
+
+            // pause on hover/focus and on pointer/touch interaction
             gallery.addEventListener('mouseenter', () => { isPaused = true; stopAutoplay(); });
             gallery.addEventListener('mouseleave', () => { isPaused = false; startAutoplay(); });
             gallery.addEventListener('focusin', () => { isPaused = true; stopAutoplay(); });
             gallery.addEventListener('focusout', () => { isPaused = false; startAutoplay(); });
+            // Pause while the user is touching or dragging the gallery
+            ['pointerdown', 'touchstart'].forEach(evt => {
+                gallery.addEventListener(evt, () => {
+                    userInteracting = true;
+                    if (resumeAfterInteractionTimer) clearTimeout(resumeAfterInteractionTimer);
+                    stopAutoplay();
+                }, { passive: true });
+            });
+            ['pointerup', 'touchend', 'pointercancel', 'touchcancel'].forEach(evt => {
+                gallery.addEventListener(evt, () => {
+                    // resume after short delay to avoid immediate auto-advance
+                    if (resumeAfterInteractionTimer) clearTimeout(resumeAfterInteractionTimer);
+                    resumeAfterInteractionTimer = setTimeout(() => { userInteracting = false; if (!isPaused) startAutoplay(); }, 2200);
+                }, { passive: true });
+            });
 
             // expose functions for buttons/dots
             window.galleryNext = galleryNext;
@@ -240,18 +288,40 @@
             });
 
             // recalc sizes on resize and init
-            window.addEventListener('resize', () => { calcSizes(); });
-            calcSizes();
+            // debounce helper
+            function debounce(fn, wait=120){ let t; return (...args) => { clearTimeout(t); t = setTimeout(() => fn(...args), wait); }; }
+
+            window.addEventListener('resize', debounce(() => { calcSizes(); }), { passive: true });
+
+            // Recalculate sizes after all slide images load (handles slow network or cached images)
+            const imgs = Array.from(gallery.querySelectorAll('img'));
+            let loaded = 0;
+            if (!imgs.length) {
+                calcSizes();
+            } else {
+                imgs.forEach(img => {
+                    if (img.complete) {
+                        loaded++; if (loaded === imgs.length) calcSizes();
+                    } else {
+                        img.addEventListener('load', () => { loaded++; if (loaded === imgs.length) calcSizes(); });
+                        img.addEventListener('error', () => { loaded++; if (loaded === imgs.length) calcSizes(); });
+                    }
+                });
+            }
             updateDots();
             startAutoplay();
 
-            // update active dot while user scrolls
+            // update active dot while user scrolls — choose the nearest slide by offsetLeft
             let scrollTimeout = null;
             gallery.addEventListener('scroll', () => {
                 if (scrollTimeout) clearTimeout(scrollTimeout);
+                userInteracting = true;
+                if (resumeAfterInteractionTimer) clearTimeout(resumeAfterInteractionTimer);
+                resumeAfterInteractionTimer = setTimeout(() => { userInteracting = false; if (!isPaused) startAutoplay(); }, 2000);
+
                 scrollTimeout = setTimeout(() => {
-                    const approx = Math.round(gallery.scrollLeft / (slideWidth + gap));
-                    currentIndex = Math.max(0, Math.min(approx, slides.length - 1));
+                    const nearest = computeCurrentIndexFromScroll();
+                    currentIndex = nearest;
                     updateDots();
                 }, 120);
             });
