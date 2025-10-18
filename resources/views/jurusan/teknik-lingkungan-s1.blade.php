@@ -45,12 +45,7 @@
             </blockquote>
         </section>
 
-        <!-- Clients Section -->
-        <section class="mt-20 grid grid-cols-3 gap-16 items-center max-w-5xl mx-auto px-4">
-            <img src="https://via.placeholder.com/180x60?text=Perusahaan+A" alt="Perusahaan A" class="mx-auto opacity-70 hover:opacity-100 transition-opacity">
-            <img src="https://via.placeholder.com/180x60?text=Perusahaan+B" alt="Perusahaan B" class="mx-auto opacity-70 hover:opacity-100 transition-opacity">
-            <img src="https://via.placeholder.com/180x60?text=Perusahaan+C" alt="Perusahaan C" class="mx-auto opacity-70 hover:opacity-100 transition-opacity">
-        </section>
+
 
         <!-- News and Whitepapers -->
         <section class="mt-20 grid grid-cols-1 md:grid-cols-2 gap-20 max-w-6xl mx-auto px-4">

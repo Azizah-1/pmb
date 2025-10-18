@@ -1,4 +1,3 @@
-
 <x-app-layout>
     <div class="min-h-screen px-6 md:px-8 py-10" style="background-color: #f8f7f5;">
         <div class="max-w-6xl mx-auto space-y-16">
@@ -17,7 +16,7 @@
 
                     <div class="md:w-1/2">
                         <!-- decorative orange box behind the photo -->
-                        <div class="relative" style="width: 545px; height:365px; margin-left: 20px;">
+                        <div class="relative" style="width: 420px; height:280px; margin-left: 20px;">
                             <!-- orange background 'shadow' (offset) -->
                             <div class="absolute bg-[#F79436] rounded-lg z-0" style="inset:0; transform: translate(16px,-16px); border-radius:12px;"></div>
 

@@ -9,7 +9,7 @@
                         <p class="mt-3 text-lg text-gray-700 max-w-2xl">Informasi lengkap terkait kebijakan beasiswa: syarat, proses seleksi, hak dan kewajiban penerima, serta mekanisme pengajuan.</p>
                     </div>
                     <div class="flex justify-center md:justify-end">
-                        <img src="https://images.unsplash.com/photo-1517520287167-4bbf64a00d66?auto=format&fit=crop&w=400&q=80" alt="Beasiswa" class="rounded-xl shadow-lg border-4 border-brand-jeruk-100 w-80 h-52 object-cover" />
+                        <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=400&q=80" alt="Beasiswa" class="rounded-xl shadow-lg border-4 border-brand-jeruk-100 w-80 h-52 object-cover" />
                     </div>
                 </div>
             </div>
@@ -85,7 +85,7 @@
                             <a href="/daftar" class="inline-block mt-4 px-5 py-2 bg-brand-jeruk text-white rounded-md font-semibold shadow">Ajukan Sekarang</a>
                         </div>
                         <div class="flex justify-center md:justify-end">
-                            <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80" alt="Formulir Beasiswa" class="rounded-xl shadow-lg border-4 border-brand-jeruk w-80 h-52 object-cover" />
+                            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=400&q=80" alt="Formulir Beasiswa" class="rounded-xl shadow-lg border-4 border-brand-jeruk w-80 h-52 object-cover" />
                         </div>
                     </div>
                 </article>

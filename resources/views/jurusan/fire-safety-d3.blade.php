@@ -20,7 +20,7 @@
                 <p class="text-gray-700 leading-relaxed">Sistem deteksi, alarm, dan suppressi kebakaran di fasilitas industri.</p>
             </div>
             <div class="bg-brand-cream p-8 rounded-lg shadow hover:shadow-lg transition-all duration-300 text-center animate-up hover:bg-brand-jeruk-100">
-                <img src="https://images.unsplash.com/photo-1517976487492-6b5ea3d6f7a9?auto=format&fit=crop&w=72&q=80" alt="HAZMAT" class="mx-auto mb-6 rounded-full border-4 border-brand-jeruk/20">
+                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=72&q=80" alt="HAZMAT" class="mx-auto mb-6 rounded-full border-4 border-brand-jeruk/20">
                 <h3 class="text-2xl font-semibold mb-3 text-brand-jeruk">Handling HAZMAT</h3>
                 <p class="text-gray-700 leading-relaxed">Prosedur penyimpanan, pengangkutan, dan respons bahan berbahaya.</p>
             </div>

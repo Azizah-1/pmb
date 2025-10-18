@@ -2,7 +2,7 @@
     <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
         <!-- Hero Section -->
         <section class="relative bg-white shadow-md rounded-lg overflow-hidden mt-8 animate-up">
-            <img src="https://images.unsplash.com/photo-1581093448792-1b9e6c1c0e2f?auto=format&fit=crop&w=1200&q=80" alt="Hero Image" class="w-full h-80 object-cover">
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1200&q=80" alt="Hero Image" class="w-full h-80 object-cover">
             <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center items-center text-center p-10">
                 <h1 class="text-white text-5xl font-extrabold mb-4 leading-tight max-w-4xl">Rekayasa Keselamatan & Kesehatan Kerja (RKK) S1</h1>
                 <p class="text-white text-xl mb-8 max-w-3xl">Program studi yang menyiapkan tenaga profesional di bidang keselamatan kerja, manajemen risiko industri, dan sistem K3.</p>
@@ -15,7 +15,7 @@
         <!-- Features Section -->
         <section class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-12">
             <div class="bg-brand-cream p-8 rounded-lg shadow hover:shadow-lg transition-all duration-300 text-center animate-up hover:bg-brand-jeruk-100">
-                <img src="https://images.unsplash.com/photo-1581093448792-1b9e6c1c0e2f?auto=format&fit=crop&w=72&q=80" alt="K3" class="mx-auto mb-6 rounded-full border-4 border-brand-jeruk/20">
+                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=72&q=80" alt="K3" class="mx-auto mb-6 rounded-full border-4 border-brand-jeruk/20">
                 <h3 class="text-2xl font-semibold mb-3 text-brand-jeruk">Dasar-dasar K3</h3>
                 <p class="text-gray-700 leading-relaxed">Prinsip keselamatan kerja, peraturan K3, dan budaya keselamatan di industri.</p>
             </div>
@@ -45,12 +45,7 @@
             </blockquote>
         </section>
 
-        <!-- Clients Section -->
-        <section class="mt-20 grid grid-cols-3 gap-16 items-center max-w-5xl mx-auto px-4">
-            <img src="https://via.placeholder.com/180x60?text=Perusahaan+A" alt="Perusahaan A" class="mx-auto opacity-70 hover:opacity-100 transition-opacity">
-            <img src="https://via.placeholder.com/180x60?text=Perusahaan+B" alt="Perusahaan B" class="mx-auto opacity-70 hover:opacity-100 transition-opacity">
-            <img src="https://via.placeholder.com/180x60?text=Perusahaan+C" alt="Perusahaan C" class="mx-auto opacity-70 hover:opacity-100 transition-opacity">
-        </section>
+
 
         <!-- News and Whitepapers -->
         <section class="mt-20 grid grid-cols-1 md:grid-cols-2 gap-20 max-w-6xl mx-auto px-4">

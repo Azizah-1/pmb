@@ -20,7 +20,7 @@
                 <p class="text-gray-700 leading-relaxed">Pemahaman laju reaksi dan desain reaktor untuk proses industri.</p>
             </div>
             <div class="bg-brand-cream p-8 rounded-lg shadow hover:shadow-lg transition-all duration-300 text-center animate-up hover:bg-brand-jeruk-100">
-                <img src="https://images.unsplash.com/photo-1542367597-6a1f1b4d5f7e?auto=format&fit=crop&w=72&q=80" alt="Operasi Unit" class="mx-auto mb-6 rounded-full border-4 border-brand-jeruk/20">
+                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=72&q=80" alt="Operasi Unit" class="mx-auto mb-6 rounded-full border-4 border-brand-jeruk/20">
                 <h3 class="text-2xl font-semibold mb-3 text-brand-jeruk">Operasi Unit</h3>
                 <p class="text-gray-700 leading-relaxed">Distilasi, penukar panas, dan operasi unit penting lainnya.</p>
             </div>
