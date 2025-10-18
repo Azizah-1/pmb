@@ -10,19 +10,7 @@
             </div>
         </section>
 
-        <!-- Program Info -->
-        <section class="mt-6 max-w-4xl mx-auto px-4 animate-up">
-            <div class="bg-brand-jeruk-100 border border-brand-jeruk/10 rounded-lg p-6 shadow-sm flex flex-col md:flex-row items-start gap-6">
-                <div>
-                    <p class="text-sm text-gray-500">Gelar yang diberikan</p>
-                    <p class="text-xl font-semibold">Sarjana Teknik (S.T.) / Sarjana K3</p>
-                </div>
-                <div>
-                    <p class="text-sm text-gray-500">Lama studi (typical)</p>
-                    <p class="text-xl font-semibold">4 tahun (S1)</p>
-                </div>
-            </div>
-        </section>
+
 
         <!-- Features Section -->
         <section class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-12">

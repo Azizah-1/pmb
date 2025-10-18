@@ -1,12 +1,9 @@
-# TODO: Optimize Laravel Server Performance
+# TODO: Add Admission Status Check Feature to Profile
 
-- [ ] Check if Vite dev server is running; if not, start npm run dev
-- [ ] Clear Laravel application cache
-- [ ] Clear config cache
-- [ ] Clear route cache
-- [ ] Clear view cache
-- [ ] Build Vite assets for production
-- [ ] Optimize images in public folder
-- [ ] Check .env for APP_DEBUG and ensure it's false
-- [ ] Suggest using XAMPP Apache instead of php artisan serve if applicable
-- [ ] Test server speed after optimizations
+## Tasks
+- [x] Create migration to add 'status_penerimaan' enum field to camaba table
+- [x] Update Camaba model to include status in fillable and casts
+- [x] Create new partial view for status display (resources/views/profile/partials/admission-status.blade.php)
+- [x] Update profile edit view to include status section
+- [x] Modify ProfileController edit method to load camaba data
+- [x] Run migration and test profile page
